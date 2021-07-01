@@ -80,30 +80,30 @@ app.use(flash());
 app.use(helmet());
 
 const scriptSrcUrls = [
-    "https://stackpath.bootstrapcdn.com/",
+    "https://stackpath.bootstrapcdn.com",
     "https://api.tiles.mapbox.com",
     "https://api.mapbox.com",
-    "https://kit.fontawesome.com/",
-    "https://cdnjs.cloudflare.com/",
+    "https://kit.fontawesome.com",
+    "https://cdnjs.cloudflare.com",
     "https://cdn.jsdelivr.net/",
-    "https://maxcdn.bootstrapcdn.com/",
-    "https://code.jquery.com/",
+    "https://maxcdn.bootstrapcdn.com",
+    "https://code.jquery.com",
 ];
 const styleSrcUrls = [
-    "https://kit-free.fontawesome.com/",
-    "https://api.mapbox.com/",
-    "https://api.tiles.mapbox.com/",
-    "https://fonts.googleapis.com/",
-    "https://use.fontawesome.com/",
-    "https://cdn.jsdelivr.net/",
-    "https://maxcdn.bootstrapcdn.com/",
+    "https://kit-free.fontawesome.com",
+    "https://api.mapbox.com",
+    "https://api.tiles.mapbox.com",
+    "https://fonts.googleapis.com",
+    "https://use.fontawesome.com",
+    "https://cdn.jsdelivr.net",
+    "https://maxcdn.bootstrapcdn.com",
 ];
 const connectSrcUrls = [
-    "https://api.mapbox.com/",
+    "https://api.mapbox.com",
      "https://*.tiles.mapbox.com",
-    "https://a.tiles.mapbox.com/",
-    "https://b.tiles.mapbox.com/",
-    "https://events.mapbox.com/",
+    "https://a.tiles.mapbox.com",
+    "https://b.tiles.mapbox.com",
+    "https://events.mapbox.com",
 ];
 const fontSrcUrls = [];
 app.use(
