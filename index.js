@@ -81,8 +81,8 @@ app.use(helmet());
 
 const scriptSrcUrls = [
     "https://stackpath.bootstrapcdn.com/",
-    "https://api.tiles.mapbox.com/",
-    "https://api.mapbox.com/",
+    "https://api.tiles.mapbox.com",
+    "https://api.mapbox.com",
     "https://kit.fontawesome.com/",
     "https://cdnjs.cloudflare.com/",
     "https://cdn.jsdelivr.net/",
@@ -100,6 +100,7 @@ const styleSrcUrls = [
 ];
 const connectSrcUrls = [
     "https://api.mapbox.com/",
+     "https://*.tiles.mapbox.com",
     "https://a.tiles.mapbox.com/",
     "https://b.tiles.mapbox.com/",
     "https://events.mapbox.com/",
@@ -113,6 +114,7 @@ app.use(
             scriptSrc: ["'unsafe-inline'", "'self'", ...scriptSrcUrls],
             styleSrc: ["'self'", "'unsafe-inline'", ...styleSrcUrls],
             workerSrc: ["'self'", "blob:"],
+            childSrc: ["blob:"],
             objectSrc: [],
             imgSrc: [
                 "'self'",
