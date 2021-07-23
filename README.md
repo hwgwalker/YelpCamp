@@ -7,3 +7,7 @@ Built using:
 - JavaScript
 - Node + Express
 - MongoDB
+
+**Link to the project**
+
+https://kinder-hockey-04627.herokuapp.com/
